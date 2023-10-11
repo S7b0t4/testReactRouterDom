@@ -6,6 +6,7 @@ import About from './pages/About';
 import Vans from './pages/Vans';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from './comp/Navbar'
+import VanPage from './pages/VanPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +15,9 @@ root.render(
     <div className="container">
       <Routes>
         <Route path='/' element={<App />}/>
-        <Route path='/vans' element={<Vans />}/>
         <Route path='/about' element={<About />}/>
+        <Route path='/vans' element={<Vans />}/>       
+        <Route path='/vans/:id' element={<VanPage />}/>       
       </Routes>
     </div>
   </BrowserRouter>
