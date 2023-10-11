@@ -1,0 +1,20 @@
+.row{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.colum{
+	display: flex;
+	flex-direction: column;
+}
+.Vans_row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.Vans_block{
+	max-width: 30%;
+}
+.center{
+	align-items: center;
+}
